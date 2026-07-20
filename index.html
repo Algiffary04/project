@@ -167,9 +167,65 @@
                     Reach out and we'll get back to you
                 </p>
                 <form action="https://science.nasa.gov/astrobiology/learning-resources/alp/how-did-our-solar-system-form/"
-                    target="_blank" referrerpolicy="noreferrer"
+                    referrerpolicy="noreferrer"
                     method="get"
-                ></form>
+                >
+                    <p><label for="name">Full Name*</label></p>
+                    <p><input type="text" name="name" id="name" required minlength="10" maxlength="20" placeholder="Full name"></p>
+                    
+                    <p><label for="email">Email*</label></p>
+                    <p><input type="email" name="email" id="email" required placeholder="example@email.com"></p>
+                    
+                    <p><label for="cty">City*</label></p>
+                    <p>
+                        <select name="city" id="cty" required>
+                            <option value="" disabled selected>Choose city</option>
+                            <option value="owode">Owode-Egba</option>
+                            <option value="mowe">Mowe</option>
+                            <option value="arepo">Arepo</option>
+                            <option value="ibafo">Ibafo</option>
+                            <option value="ofada">Ofada</option>
+                            <option value="wawa">Wawa</option>
+                            <option value="asese">Asese</option>
+                            <option value="magboro">Magboro</option>
+                            <option value="ajebo">Ajebo</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    
+                    <p><label for="phone">Phone Number*</label></p>
+                    <p><input type="tel" name="phone" id="phone" required maxlength="11"></p>
+                    
+                    <p><label for="msg">Message*</label></p>
+                    <p><textarea name="comments" id="msg" required maxlength="100" rows="5"></textarea></p>
+                    <p>100 characters</p>
+                    
+                    <p>How should we contact you?</p>
+                    <p>
+                        <input type="radio" name="contact" value="phone" id="phn">
+                        <label for="phn">Phone</label>
+                        
+                        <input type="radio" name="contact" value="email" id="mail">
+                        <label for="mail">Email</label>
+
+                        <input type="radio" name="contact" value="both" id="both">
+                        <label for="both">Both</label>
+                    </p>
+                    
+                    <p>How did you hear about us?</p>
+                    <p>
+                        <input type="checkbox" name="hear-about" value="friend" id="frnd" checked>
+                        <label for="frnd">Friend</label>
+
+                        <input type="checkbox" name="hear-about" value="tsa" id="tsa">
+                        <label for="tsa">TS Academy</label>
+
+                        <input type="checkbox" name="hear-about" value="others" id="otr">
+                        <label for="otr">Others</label>
+                    </p>
+                    
+                    <p><button type="submit" class="btn">Submit</button></p>
+                </form>
             </section>
 
             <hr>
